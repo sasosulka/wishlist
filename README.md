@@ -26,7 +26,7 @@ A stylish wish list application built with a **Neobrutalism** aesthetic. I devel
 
 ---
 
-### 🛠 Stack / Технологии
+### Stack / Технологии
 * **Frontend:** React, TypeScript, Vite
 * **Forms:** React Hook Form
 * **Styles:** Custom CSS (Brutalist UI)
