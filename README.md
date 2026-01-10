@@ -33,3 +33,34 @@ A stylish wish list application built with a **Neobrutalism** aesthetic. I devel
 * **Router:** React Router (HashRouter)
 
 🔗 **Live Demo:** [Смотреть проект вживую](https://sasosulka.github.io/wishlist/)
+
+---
+
+### Как запустить проект локально / How to run locally
+
+Если вы хотите запустить этот проект у себя на компьютере, следуйте инструкции:
+
+1. **Клонируйте репозиторий / Clone the repo:**
+   ```
+   git clone https://github.com/sasosulka/wishlist.git
+   ```
+
+2. **Перейдите в папку проекта / Go to folder:**
+   ```
+   cd wishlist
+   ```
+
+3. **Установите зависимости / Install dependencies:**
+   ```
+   npm install
+   ```
+
+4. **Запустите сервер для разработки / Start dev server:**
+   ```
+   npm run dev
+   ```
+
+5. **Откройте ссылку в браузере / Open browser:** 
+   ```
+	http://localhost:5173/
+	```
