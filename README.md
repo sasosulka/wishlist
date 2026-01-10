@@ -32,7 +32,7 @@ A stylish wish list application built with a **Neobrutalism** aesthetic. I devel
 * **Styles:** Custom CSS (Brutalist UI)
 * **Router:** React Router (HashRouter)
 
-🔗 **Live Demo:** [Смотреть проект вживую](https://sasosulka.github.io/wishlist/)
+🔗 **Live Demo:** [Смотреть проект вживую](https://codebysashka.github.io/wishlist/)
 
 ---
 
@@ -42,7 +42,7 @@ A stylish wish list application built with a **Neobrutalism** aesthetic. I devel
 
 1. **Клонируйте репозиторий / Clone the repo:**
    ```
-   git clone https://github.com/sasosulka/wishlist.git
+   git clone https://github.com/codebysashka/wishlist.git
    ```
 
 2. **Перейдите в папку проекта / Go to folder:**
