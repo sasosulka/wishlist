@@ -40,27 +40,31 @@ A stylish wish list application built with a **Neobrutalism** aesthetic. I devel
 
 Если вы хотите запустить этот проект у себя на компьютере, следуйте инструкции:
 
-1. **Клонируйте репозиторий / Clone the repo:**
+1. Установите Node.js / Install Node.js:
+
+	[Скачать Node.js / Download Node.js](https://nodejs.org/en)
+
+2. **Клонируйте репозиторий / Clone the repo:**
    ```
    git clone https://github.com/codebysashka/wishlist.git
    ```
 
-2. **Перейдите в папку проекта / Go to folder:**
+3. **Перейдите в папку проекта / Go to folder:**
    ```
    cd wishlist
    ```
 
-3. **Установите зависимости / Install dependencies:**
+4. **Установите зависимости / Install dependencies:**
    ```
    npm install
    ```
 
-4. **Запустите сервер для разработки / Start dev server:**
+5. **Запустите сервер для разработки / Start dev server:**
    ```
    npm run dev
    ```
 
-5. **Откройте ссылку в браузере / Open browser:** 
+6. **Откройте ссылку в браузере / Open browser:** 
    ```
 	http://localhost:5173/
 	```
