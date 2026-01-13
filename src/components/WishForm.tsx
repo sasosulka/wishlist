@@ -16,11 +16,9 @@ export const WishForm = ({ onAddWish }: { onAddWish: (wish: IWish) => void }) =>
 	const onSubmit = async (data: IFormInput) => {
 		let finalImage = "";
 
-		// Сначала смотрим, не загрузил ли юзер файл
 		if (data.imageFile?.[0]) {
 			finalImage = await convertFileToBase64(data.imageFile[0]);
 		} else {
-			// Если файла нет, берем ссылку
 			finalImage = data.imageLink || "";
 		}
 
@@ -33,12 +31,12 @@ export const WishForm = ({ onAddWish }: { onAddWish: (wish: IWish) => void }) =>
 			link: data.shopLink,
 		});
 
-		reset(); // Очищаем поля после добавления
+		reset(); 
 	};
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className="card-brutal" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-			<h3 style={{ textAlign: 'center' }}>✨ Чего я хочу?</h3>
+			<h3 style={{ textAlign: 'center' }}>Чего я хочу?</h3>
 
 			<div className="input-group">
 				<label>Название:</label>

@@ -4,13 +4,11 @@ import { WishList } from '../components/WishList';
 import type { IWish } from '../types';
 
 export const DashboardPage = () => {
-	// Грузим данные из локалстореджа сразу при создании стейта
 	const [wishes, setWishes] = useState<IWish[]>(() => {
 		const saved = localStorage.getItem('my_wishlist_data');
 		return saved ? JSON.parse(saved) : [];
 	});
 
-	// Следим за изменениями списка и сохраняем, если что-то поменялось
 	useEffect(() => {
 		localStorage.setItem('my_wishlist_data', JSON.stringify(wishes));
 	}, [wishes]);
@@ -33,10 +31,8 @@ export const DashboardPage = () => {
 		wishes.forEach((item, index) => {
 			message += `${index + 1}. ${item.title} — ${item.price} ₽\n`;
 
-			// Если это ссылка на сайт
 			if (item.link) message += `🛒 Купить: ${item.link}\n`;
 
-			// Добавляем картинку, только если это нормальная ссылка, а не base64
 			if (item.image_url && item.image_url.startsWith('http')) {
 				message += `🖼️ Фото: ${item.image_url}\n`;
 			}

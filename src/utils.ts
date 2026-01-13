@@ -1,4 +1,3 @@
-// Простая конвертация (если файл маленький)
 const toBase64 = (file: File): Promise<string> => {
 	return new Promise((resolve, reject) => {
 		const reader = new FileReader();
@@ -8,7 +7,7 @@ const toBase64 = (file: File): Promise<string> => {
 	});
 };
 
-// СЖАТИЕ КАРТИНКИ (Обязательно для LocalStorage!)
+// СЖАТИЕ КАРТИНКИ 
 export const convertFileToBase64 = async (file: File): Promise<string> => {
 	// Если меньше 100кб, не сжимаем
 	if (file.size < 100000) {
@@ -25,7 +24,6 @@ export const convertFileToBase64 = async (file: File): Promise<string> => {
 
 			img.onload = () => {
 				const canvas = document.createElement('canvas');
-				// Сжимаем до 600px ширины (оптимально для хранения)
 				const maxWidth = 600;
 				const scaleSize = maxWidth / img.width;
 				const newWidth = maxWidth;
@@ -37,7 +35,6 @@ export const convertFileToBase64 = async (file: File): Promise<string> => {
 				const ctx = canvas.getContext('2d');
 				ctx?.drawImage(img, 0, 0, newWidth, newHeight);
 
-				// Качество 0.6 (достаточно для веба)
 				const compressedData = canvas.toDataURL('image/jpeg', 0.6);
 				resolve(compressedData);
 			};

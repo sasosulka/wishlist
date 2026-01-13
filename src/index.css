@@ -4,11 +4,9 @@
 	padding: 0;
 }
 
-/* 1. Базовые настройки */
 :root {
 	--main-pink: #ffb6c1;
 	--bg-color: #fff0f5;
-	/* Лавандовый румянец */
 	--text-color: #2c2c2c;
 	--border-color: #000000;
 	--shadow-hard: 5px 5px 0px 0px #000000;
@@ -18,22 +16,18 @@
 body {
 	margin: 0;
 	font-family: 'Fredoka', sans-serif;
-	/* Наш новый шрифт */
 	background-color: var(--bg-color);
 	color: var(--text-color);
-	/* Паттерн в точку для фона */
 	background-image: radial-gradient(#db7093 1px, transparent 1px);
 	background-size: 20px 20px;
 }
 
-/* 2. Контейнер (чтобы контент не прилипал к краям) */
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 40px 20px;
 }
 
-/* 3. Стиль для КАРТОЧЕК (Форма и Карточки желаний) */
 .card-brutal {
 	background: white;
 	border: 3px solid var(--border-color);
@@ -43,13 +37,11 @@ body {
 	transition: transform 0.2s;
 }
 
-/* Эффект при наведении на карточку */
 .card-brutal:hover {
 	transform: translate(-2px, -2px);
 	box-shadow: 7px 7px 0px 0px #000000;
 }
 
-/* 4. Стиль для КНОПОК */
 .btn-primary {
 	background-color: #000;
 	color: #fff;
@@ -68,7 +60,6 @@ body {
 
 .btn-primary:active {
 	transform: translate(3px, 3px);
-	/* Эффект нажатия */
 	box-shadow: none;
 }
 
@@ -77,7 +68,6 @@ body {
 	color: black;
 }
 
-/* 5. Стиль для ИНПУТОВ */
 .input-brutal {
 	width: 100%;
 	padding: 12px;
@@ -86,7 +76,6 @@ body {
 	font-family: 'Fredoka', sans-serif;
 	font-size: 14px;
 	box-sizing: border-box;
-	/* Чтобы паддинги не ломали ширину */
 	transition: all 0.2s;
 }
 
@@ -96,17 +85,13 @@ body {
 	box-shadow: var(--shadow-soft);
 }
 
-/* --- Стили для Навигации --- */
 .navbar {
 	background-color: #ffffff;
 	border-bottom: 3px solid black;
 	padding: 15px 0;
-
-	/* Чтобы меню "прилипало" к верху при прокрутке */
 	position: sticky;
 	top: 0;
 	z-index: 1000;
-	/* Чтобы было поверх всего остального */
 }
 
 .nav-container {
@@ -121,7 +106,6 @@ body {
 .nav-logo {
 	font-size: 24px;
 	font-weight: 900;
-	/* Самый жирный */
 	text-decoration: none;
 	color: black;
 	letter-spacing: 1px;
@@ -139,12 +123,10 @@ body {
 	font-size: 16px;
 	padding: 8px 16px;
 	border: 2px solid transparent;
-	/* Невидимая рамка */
 	border-radius: 8px;
 	transition: all 0.2s;
 }
 
-/* Эффект при наведении: появляется розовая рамка */
 .nav-item:hover {
 	background-color: var(--main-pink);
 	border: 2px solid black;
@@ -152,7 +134,6 @@ body {
 	transform: translate(-2px, -2px);
 }
 
-/* Моя сетка для дашборда */
 .dashboard-grid {
 	display: grid;
 	grid-template-columns: 350px 1fr;
@@ -160,7 +141,6 @@ body {
 	align-items: flex-start;
 }
 
-/* На мобилках всё в одну колонку */
 @media (max-width: 900px) {
 	.dashboard-grid {
 		grid-template-columns: 1fr;
